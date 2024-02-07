@@ -8,7 +8,11 @@ except ImportError as e:
 
 from dotenv import load_dotenv
 from os     import getenv
-from reader import readCogs
+from reader import readCommands
 
 import loader
 
+# read cogs here, read token here
+
+# call function from loader, with token & command list in arguments
+# convert command list into cog list in /lai/loader.py & load those.

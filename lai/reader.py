@@ -1,9 +1,9 @@
 import re
 
-def readCogs():
-    cogs = []
+def readCommands():
+    commands = []
     
-    file = open("misc/cogs.txt", "r")
+    file = open("misc/commands.txt", "r")
     temp = file.readlines() 
     
     for sub in temp:
@@ -11,4 +11,4 @@ def readCogs():
     
     file.close()
 
-    return cogs
+    return commands
