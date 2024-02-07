@@ -7,7 +7,7 @@ def readCommands():
     temp = file.readlines() 
     
     for sub in temp:
-        cogs.append(re.sub('\n', '', sub))
+        commands.append(re.sub('\n', '', sub))
     
     file.close()
 

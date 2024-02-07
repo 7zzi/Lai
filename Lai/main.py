@@ -13,6 +13,13 @@ from reader import readCommands
 import loader
 
 # read cogs here, read token here
-
+# loader.main(TOKEN, commands)
 # call function from loader, with token & command list in arguments
 # convert command list into cog list in /lai/loader.py & load those.
+
+
+
+TOKEN    = str(getenv("TOKEN"))
+COMMANDS = readCommands()
+
+loader.main(TOKEN, COMMANDS)
