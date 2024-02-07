@@ -1,16 +1,14 @@
 from os import system
 
+try:
+    from dotenv import load_dotenv
+except ImportError as e:
+    print("dotenv was not found, installing...")
+    system("pip install python-dotenv")
 
+from dotenv import load_dotenv
+from os     import getenv
+from reader import readCogs
 
-cogfile.close()
+import loader
 
-def main():
-    i = 0
-
-    for str in [
-                "a",
-                "b",
-                ]:
-    
-        i += 1
-        # exec(f"from {str} import {str.split('.')[-1].capitalize()}Cog")
