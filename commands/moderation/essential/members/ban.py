@@ -6,7 +6,7 @@ class BanCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name='ban')
+    @commands.command(name = "ban")
     @commands.has_guild_permissions(moderate_members = True)
     async def ban(self, ctx, m: discord.Member = None, *, r: str):
         if m == None:
