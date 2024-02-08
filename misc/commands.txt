@@ -1,3 +1,2 @@
-commands.moderation.essential.ban
-
+commands.moderation.essential.members.ban
 commands.test

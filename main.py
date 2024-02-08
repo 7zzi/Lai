@@ -26,8 +26,8 @@ i = 0
 
 
 for str in readCommands():
-    
     i += 1
+    print(f"from {str} import {str.split('.')[-1].capitalize()}Cog")
     exec(f"from {str} import {str.split('.')[-1].capitalize()}Cog")
 
 intent = discord.Intents.default()
