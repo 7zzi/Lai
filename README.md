@@ -1,5 +1,5 @@
 # Lai
 
-rewritten, improved version of [Cloud](https://github.com/7zzi/Cloud)
+rewritten, improved version of [Cloud](https://github.com/9ful/Cloud)
 
-## sample code as of current, but will be worked on soon
+## in the works! watch for changes!
