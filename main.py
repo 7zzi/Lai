@@ -19,15 +19,8 @@ from discord.ext import commands
 # convert command list into cog list in /lai/loader.py & load those.
 
 file = open("token.txt", "r")
-i = 0
-
-
-
-
 
 for str in readCommands():
-    i += 1
-    print(f"from {str} import {str.split('.')[-1].capitalize()}Cog")
     exec(f"from {str} import {str.split('.')[-1].capitalize()}Cog")
 
 intent = discord.Intents.default()
@@ -40,9 +33,12 @@ Lai.remove_command('help')
 for cog in [
     TestCog,
     BanCog,
+    UnbanCog,
+    MuteCog,
+    KickCog
     ]:
-
+    print(cog)
     Lai.add_cog(cog(Lai))
-    Lai.run(file.read())
 
+Lai.run(file.read())
 file.close()

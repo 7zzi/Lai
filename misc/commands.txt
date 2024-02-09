@@ -1,2 +1,5 @@
-commands.moderation.essential.members.ban
+commands.members.ban
+commands.members.unban
+commands.members.kick
+commands.members.mute
 commands.test
