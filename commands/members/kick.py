@@ -8,16 +8,16 @@ class KickCog(commands.Cog):
 
     @commands.command(name = "kick")
     @commands.has_guild_permissions(moderate_members = True)
-    async def kick(self, ctx, m: discord.Member = None, *, r: str):
+    async def kick(self, ctx, m: discord.Member = None, *, r: str = None):
         if m == None:
             await ctx.send("You did not provide a user to kick.")
         if r == None:
-            await m.message(f"You've been kicked from {ctx.guild.name}.")
+            await m.send(f"You've been kicked from {ctx.guild.name}.")
             await m.kick()
             
             await ctx.send(f"Kicked {m}.")
         else:
-            await m.message(f"You've been kicked from {ctx.guild.name} for {r}")
+            await m.send(f"You've been kicked from {ctx.guild.name} for {r}")
             await m.kick(reason = r)
             
             await ctx.send(f"Kicked {m} for {r}")

@@ -14,11 +14,11 @@ class MuteCog(commands.Cog):
         if t == None:
             await ctx.send("You haven't specified a mute duration.")
         if r == None:
-            await m.message(f"You've been muted in {ctx.guild.name} for {r}, expires in {t}.")
+            await m.send(f"You've been muted in {ctx.guild.name} for {r}, expires in {t}.")
             
             await ctx.send(f"Mute {m}.")
         else:
-            await m.message(f"You've been banned from {ctx.guild.name} for {r}")
+            await m.send(f"You've been banned from {ctx.guild.name} for {r}")
             await m.ban(reason = r)
             
             await ctx.send(f"Muted {m} for {r}")
