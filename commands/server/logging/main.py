@@ -33,3 +33,4 @@ class MainCog(commands.Cog):
             await logChannel.send(f"message deleted @ {datetime.now().strftime('%H:%M:%S UTC')}\n\ncontent: {ma.content}\nchannel: {ma.channel.mention}\nauthor: {ma.author.mention}")
         
         e.close()
+        cf.close()
