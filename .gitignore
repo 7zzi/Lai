@@ -1,6 +1,7 @@
 token.txt
 __pycache__
 
-misc/logging.isEnabled
+misc/logging.isEnabled/*
+misc/logging.channel/*
 
 *.pyc
