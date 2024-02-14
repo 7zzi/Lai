@@ -1,5 +1,6 @@
-commands.members.ban
-commands.members.unban
-commands.members.kick
-commands.members.mute
+commands.server.logging.main
+commands.members.base.ban
+commands.members.base.unban
+commands.members.base.kick
+commands.members.base.mute
 commands.test

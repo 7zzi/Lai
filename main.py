@@ -35,7 +35,8 @@ for cog in [
     BanCog,
     UnbanCog,
     MuteCog,
-    KickCog
+    KickCog,
+    MainCog,
     ]:
     print(cog)
     Lai.add_cog(cog(Lai))
