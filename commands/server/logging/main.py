@@ -20,4 +20,8 @@ class MainCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message_delete(self, message):
-        await message.channel.send(f"message deleted @ {datetime.now().strftime('%H:%M:%S UTC')}\n\ncontent: {message.content}\nchannel: {message.channel}")
+        x = open(f"misc/logging.isEnabled/{ctx.guild.id}.txt", 'r+')
+        r = x.read()
+
+        if (r) == '1':
+            await message.channel.send(f"message deleted @ {datetime.now().strftime('%H:%M:%S UTC')}\n\ncontent: {message.content}\nchannel: {message.channel}")
