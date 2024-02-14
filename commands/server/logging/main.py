@@ -25,3 +25,4 @@ class MainCog(commands.Cog):
 
         if (r) == '1':
             await message.channel.send(f"message deleted @ {datetime.now().strftime('%H:%M:%S UTC')}\n\ncontent: {message.content}\nchannel: {message.channel}")
+        x.close()
