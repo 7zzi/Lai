@@ -8,6 +8,7 @@ class MainCog(commands.Cog):
         a = bot
 
     @commands.command(name = "logging")
+    @commands.has_guild_permissions(manage_messages = True)
     async def logging(self, ctx, t):
         import commands.server.logging.disable
         import commands.server.logging.enable
