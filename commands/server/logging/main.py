@@ -29,7 +29,8 @@ class MainCog(commands.Cog):
         logChannel = await discord.utils.get_or_fetch(ma.guild, 'channel', c, default=None)
 
         if (et) == '1':
-            await logChannel.send(f"message deleted @ {datetime.now().strftime('%H:%M:%S UTC')}\n\ncontent: {ma.content}\nchannel: {ma.channel.mention}\nauthor: {ma.author.mention}")
+            if (str(ma.author.id)) != "308291084088377344":
+                await logChannel.send(f"message deleted @ {datetime.now().strftime('%H:%M:%S UTC')}\n\ncontent: {ma.content}\nchannel: {ma.channel.mention}\nauthor: {ma.author.mention}")
         
         e.close()
 

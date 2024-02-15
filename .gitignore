@@ -3,5 +3,5 @@ __pycache__
 
 misc/logging.isEnabled/*
 misc/logging.channel/*
-
+misc/warns/*
 *.pyc
