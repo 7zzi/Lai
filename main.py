@@ -27,7 +27,7 @@ intent = discord.Intents.default()
 intent.members = True
 intent.message_content = True
 
-Lai = commands.Bot(command_prefix="'", intents = intent, activity = discord.Activity(type=discord.ActivityType.watching, name="thoughts 💭 ... & for ' "))
+Lai = commands.Bot(command_prefix="'", intents = intent, activity = discord.Activity(type=discord.ActivityType.watching, name="u 😜😜"))
 Lai.remove_command('help')
 
 for cog in [
@@ -37,6 +37,13 @@ for cog in [
     MuteCog,
     KickCog,
     MainCog,
+    BaseCog,
+    AddCog,
+    RemoveCog,
+    CloseCog,
+    WarnCog,
+    WarnsCog,
+    ClearCog,
     ]:
     print(cog)
     Lai.add_cog(cog(Lai))

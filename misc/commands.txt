@@ -1,4 +1,11 @@
 commands.server.logging.main
+commands.server.ticket.close
+commands.server.ticket.base
+commands.server.ticket.add
+commands.server.ticket.remove
+commands.members.warn.clear
+commands.members.warn.warns
+commands.members.warn.warn
 commands.members.base.ban
 commands.members.base.unban
 commands.members.base.kick

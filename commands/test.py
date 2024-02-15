@@ -8,4 +8,4 @@ class TestCog(commands.Cog):
 
     @commands.command(name = "test")
     async def test(self, ctx):
-        await ctx.send(f"{ctx.author.mention}")
+        await ctx.send(f"hi {ctx.author.mention}")
