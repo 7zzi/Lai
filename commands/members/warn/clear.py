@@ -9,6 +9,6 @@ class ClearCog(commands.Cog):
     @commands.command(name="clearwarnings", aliases = ["clear"])
     @commands.has_permissions(moderate_members=True)
     async def clearwarn(self, ctx, member: discord.Member):
-        with open(f'warns/{member.id}.csv', 'w') as w:
+        with open(f'misc/warns/{member.id}.csv', 'w') as w:
             w.write("")
         await ctx.send(f"Cleared warnings for {member.mention}.")

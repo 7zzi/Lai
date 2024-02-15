@@ -10,7 +10,7 @@ class WarnCog(commands.Cog):
     @commands.command(name="warn", aliases=["w"])
     @commands.has_permissions(moderate_members=True)
     async def warn(self, ctx, member: discord.Member, *, reason=None):
-        with open(f'warns/{ctx.guild.id}/{member.id}.csv', 'a') as w:
+        with open(f'misc/warns/{ctx.guild.id}/{member.id}.csv', 'a') as w:
             w.write(f"Warned for {reason}, on {datetime.now().strftime('%Y-%m-%d at %H:%M:%S UTC')}\n")
 
         if reason == None:
