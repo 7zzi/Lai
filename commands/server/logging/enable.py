@@ -5,11 +5,7 @@ async def main(ctx, c):
         x.write('1')
         x.close()
 
-        v = open(f"misc/logging.channel/{ctx.guild.id}.txt", 'w')
-        v.write(c)
-        v.close()
-
-        await ctx.send('logging enabled.')
+        await ctx.send('logging enabled. #logs')
     else:
         x = open(f"misc/logging.isEnabled/{ctx.guild.id}.txt", 'r+')
         r = x.read()
@@ -29,5 +25,3 @@ async def main(ctx, c):
 
         if (r) == '1':
             await ctx.send('logging is already enabled! #logs')
-
-        x.close()

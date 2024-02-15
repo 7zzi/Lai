@@ -5,7 +5,6 @@ from discord.ext import commands
 class MainCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        
 
     @commands.command(name = "logging")
     @commands.has_guild_permissions(manage_messages = True)
@@ -33,4 +32,5 @@ class MainCog(commands.Cog):
             await logChannel.send(f"message deleted @ {datetime.now().strftime('%H:%M:%S UTC')}\n\ncontent: {ma.content}\nchannel: {ma.channel.mention}\nauthor: {ma.author.mention}")
         
         e.close()
+
         cf.close()
